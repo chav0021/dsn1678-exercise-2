@@ -52,13 +52,17 @@ body {
 }
 
 .chart__item {
-  float: left;
-  height: 16em;
-  margin: 0 0.5%;
-  position: relative;
-  width: 7.3%;
+	float: left;
+	height: 16em;
+	margin: 0 0.5%;
+	position: relative;
+	width: 7.3%;
+	background-color: rgba(204, 204, 204, 0);
+	transition: all 100ms ease-in-out;
+}
 
-  background-color: rgba(204, 204, 204, 0);
+.chart__item:hover {
+	background-color: rgba(204, 204, 204, 0.4);
 }
 
 .chart__link,
