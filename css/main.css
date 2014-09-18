@@ -65,21 +65,27 @@ body {
 	background-color: rgba(204, 204, 204, 0.4);
 }
 
+.chart__item:hover .chart__label {
+	color: #fff;
+}
+
+.chart__item:hover .chart__bar {
+	background-color: rgba(127, 219, 255, 1);
+}
+
 .chart__link,
 .chart__link:link,
 .chart__link:visited {
   display: block;
-
   color: #e2e2e2;
   text-decoration: none;
 }
 
 .chart__label {
-  bottom: -1.7em;
-  position: absolute;
-  width: 100%;
-
-  text-align: center;
+	bottom: -1.7em;
+	position: absolute;
+	width: 100%;
+	text-align: center;
 }
 
 .chart__bar-wrap {
@@ -89,14 +95,26 @@ body {
 }
 
 .chart__bar {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  background-color: rgba(127, 219, 255, 0.6);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: all 300ms ease-in-out;
+	background-color: rgba(127, 219, 255, 0.6);
 }
+
+/*
+	<li class="chart__item">
+        <a class="chart__link" href="#">
+          <span class="chart__label">Jan</span>
+          <div class="chart__bar-wrap" style="top: 41.7%">
+            <span class="chart__bar"></span>
+            <span class="chart__count">$14&nbsp;M</span>
+          </div>
+        </a>
+      </li>
+*/
 
 .chart__count {
   display: inline-block;
